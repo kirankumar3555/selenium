@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-03-05 22:05:14</p>
+                <p class='attribute'><strong>Duration: </strong>18.65 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.MyTestCase</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_a_gmaillogin</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_b_password</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='Xb9hP]/input because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='Xb9hP]/input' is not a valid XPath expression.
+  (Session info: chrome=99.0.4844.51)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x01209943+2595139]
+	Ordinal0 [0x0119C9F1+2148849]
+	Ordinal0 [0x01094528+1066280]
+	Ordinal0 [0x01096E04+1076740]
+	Ordinal0 [0x01096CBE+1076414]
+	Ordinal0 [0x01096F50+1077072]
+	Ordinal0 [0x010C0D1E+1248542]
+	Ordinal0 [0x010C11CB+1249739]
+	Ordinal0 [0x010ED812+1431570]
+	Ordinal0 [0x010DBA34+1358388]
+	Ordinal0 [0x010EBAF2+1424114]
+	Ordinal0 [0x010DB806+1357830]
+	Ordinal0 [0x010B6086+1204358]
+	Ordinal0 [0x010B6F96+1208214]
+	GetHandleVerifier [0x013AB232+1658114]
+	GetHandleVerifier [0x0146312C+2411516]
+	GetHandleVerifier [0x0129F261+560433]
+	GetHandleVerifier [0x0129E366+556598]
+	Ordinal0 [0x011A286B+2173035]
+	Ordinal0 [0x011A75F8+2192888]
+	Ordinal0 [0x011A76E5+2193125]
+	Ordinal0 [0x011B11FC+2232828]
+	BaseThreadInitThunk [0x76D1FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77D37A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77D37A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\kumar\PycharmProjects\jj\UnitTest\UnitTestExample4.py", line 27, in test_b_password
+    self.driver.find_element(By.XPATH,"//div[@class='Xb9hP]/input").send_keys("Kiran@391")
+  File "C:\Users\kumar\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1244, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\kumar\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\kumar\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //div[@class='Xb9hP]/input because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//div[@class='Xb9hP]/input' is not a valid XPath expression.
+  (Session info: chrome=99.0.4844.51)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x01209943+2595139]
+	Ordinal0 [0x0119C9F1+2148849]
+	Ordinal0 [0x01094528+1066280]
+	Ordinal0 [0x01096E04+1076740]
+	Ordinal0 [0x01096CBE+1076414]
+	Ordinal0 [0x01096F50+1077072]
+	Ordinal0 [0x010C0D1E+1248542]
+	Ordinal0 [0x010C11CB+1249739]
+	Ordinal0 [0x010ED812+1431570]
+	Ordinal0 [0x010DBA34+1358388]
+	Ordinal0 [0x010EBAF2+1424114]
+	Ordinal0 [0x010DB806+1357830]
+	Ordinal0 [0x010B6086+1204358]
+	Ordinal0 [0x010B6F96+1208214]
+	GetHandleVerifier [0x013AB232+1658114]
+	GetHandleVerifier [0x0146312C+2411516]
+	GetHandleVerifier [0x0129F261+560433]
+	GetHandleVerifier [0x0129E366+556598]
+	Ordinal0 [0x011A286B+2173035]
+	Ordinal0 [0x011A75F8+2192888]
+	Ordinal0 [0x011A76E5+2193125]
+	Ordinal0 [0x011B11FC+2232828]
+	BaseThreadInitThunk [0x76D1FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77D37A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77D37A6E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 18.65 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
